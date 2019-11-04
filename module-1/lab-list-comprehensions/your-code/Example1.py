@@ -1,6 +1,6 @@
 
 #import numpy as np
-#import pandas as pd
+#import numpy as np
 
 print('Hola')
 print(range(0,50))

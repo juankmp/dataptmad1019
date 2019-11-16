@@ -5,40 +5,48 @@ import numpy as np
 
 #2. Print the NUMPY version and the configuration.
 
-!numpy
+print(np.version.version)
 
 
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
-a = np.random.random(2,3,5)
-print(a)
-
+a = np.random.random((2,3,5))
 
 
 #4. Print a.
+
+print(a)
 
 
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
-
+b = np.ones((5,2,3))
 
 #6. Print b.
 
+print(b)
 
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
-
-
+if int((a.size)) == int((b.size)):
+    print("They are the same")
+else:
+    print("They're different")
 
 #8. Are you able to add a and b? Why or why not?
-
+try:
+    sum_ab = a + b
+    print(sum_ab)
+except:
+    print("Dimmensions are not the same!")
 
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
+
 
 
 
